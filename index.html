@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dreamscape | Your Little Escape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header>
+    <a class="logo" href="#">☾ DREAMSCAPE</a>
+    <span class="tag">YOUR LITTLE ESCAPE ✦</span>
+  </header>
+
+  <main>
+    <div class="moon">☾</div>
+    <p class="eyebrow">✧ A LITTLE SPACE JUST FOR YOU ✧</p>
+
+    <h1>Let your mind<br> <span>wander.</span></h1>
+
+    <p class="intro">
+      Take a breath. Leave the noise behind.
+      You're allowed to pause and just exist.
+    </p>
+
+    <section class="glass">
+      <p class="label">HOW DOES YOUR UNIVERSE FEEL?</p>
+
+      <div class="moods">
+        <button class="mood active" data-mood="calm">☁️ Calm</button>
+        <button class="mood" data-mood="happy">☀️ Happy</button>
+        <button class="mood" data-mood="sad">🌧️ Blue</button>
+        <button class="mood" data-mood="motivated">⚡ Ready</button>
+      </div>
+
+      <div class="message-box" aria-live="polite">
+        <span class="sparkle">✧</span>
+        <p id="message">You don't have to figure everything out tonight.</p>
+        <span class="message-caption" id="caption">A NOTE FROM THE UNIVERSE</span>
+      </div>
+
+      <button class="primary" id="inspireBtn">
+        Find a little inspiration <span>↗</span>
+      </button>
+
+      <button class="surprise" id="surpriseBtn">
+        ✦ Open your secret message
+      </button>
+
+      <p id="secret" class="secret" hidden>
+        Even the stars need darkness to shine. ✨
+      </p>
+    </section>
+
+    <section class="journal">
+      <p class="eyebrow">✧ YOUR PRIVATE LITTLE CORNER ✧</p>
+      <h2>Dream <span>Journal.</span></h2>
+      <p class="journal-intro">Some thoughts deserve a place to stay.</p>
+
+      <textarea id="dreamInput" maxlength="1000"
+        placeholder="What's on your mind tonight?"></textarea>
+
+      <button class="primary" id="saveDream">Save to my journal ✦</button>
+      <p id="journalStatus" aria-live="polite"></p>
+      <div id="dreamList"></div>
+    </section>
+
+
+<section class="cosmic-player">
+  <p class="eyebrow">✧ SOUNDTRACK OF THE STARS ✧</p>
+  <h2>Lost in <span>Space.</span></h2>
+  <p class="music-subtitle">A little music for your universe.</p>
+
+  <div class="music-art">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+    <div class="planet">✦</div>
+    <span class="art-star star-one">✧</span>
+    <span class="art-star star-two">✦</span>
+    <span class="art-star star-three">·</span>
+  </div>
+
+  <p class="track-name">COSMIC AMBIENT</p>
+  <p class="track-detail">ALEXANDER BLU · DEEP SPACE</p>
+
+  <div class="visualizer" id="visualizer" aria-hidden="true">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+    <span></span>
+  </div>
+
+  <audio
+    id="cosmicAudio"
+    preload="none"
+    loop
+    src="https://orangefreesounds.com/wp-content/uploads/2025/03/Cosmic-ambient-soundscape-music.mp3">
+  </audio>
+
+  <button class="music-play" id="musicToggle"
+    aria-label="Play cosmic ambient music">
+    ▶
+  </button>
+
+  <p id="musicStatus" class="music-status" aria-live="polite">
+    YOUR UNIVERSE IS WAITING
+  </p>
+
+  <div class="volume-control">
+    <span>🔈</span>
+    <input id="musicVolume" type="range"
+      min="0" max="1" step="0.01" value="0.4"
+      aria-label="Music volume">
+    <span>🔊</span>
+  </div>
+
+  <p class="music-credit">
+    Music: <a href="https://orangefreesounds.com/cosmic-ambient-soundscape-music/"
+      target="_blank" rel="noopener noreferrer">Cosmic Ambient Soundscape</a>
+    by Alexander Blu.
+  </p>
+</section>
+
+
+    <p class="footer">MADE OF MOONLIGHT & LITTLE DREAMS <span>✦</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
